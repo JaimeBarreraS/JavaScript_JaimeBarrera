@@ -1,5 +1,5 @@
 // Función para mostrar el menú
-function showMenu() {
+function Menu() {
     console.log("==== Gestion Academica CampusLands ====" );
     console.log("1. Registrar Camper" );
     console.log("2. Registrar Trainer" );
@@ -14,13 +14,13 @@ function showMenu() {
 }
 
 // Función para procesar la opción seleccionada
-function processOption() {
+function option_menu() {
     const option = prompt("Seleccione una opción: ");
 
     switch (option) {
         case "1":
             // Llamar a la función que muestra el formulario de registro de campers
-            showCamperRegistrationForm();
+            camper_registro();
             break;
         case "2":
             // Código para registrar un trainer
@@ -42,12 +42,12 @@ function processOption() {
 }
 
 // Función para mostrar el formulario de registro de campers
-function showCamperRegistrationForm() {
+function camper_registro() {
     // Código para mostrar el formulario de registro de campers
     console.log("Mostrando el formulario de registro de campers...");
 
     // Cargar y manejar el archivo JSON
-    async function loadAndManageJSON() {
+    async function loadJSON() {
         try {
             const response = await fetch('campus.json');
             const campusJson = await response.json();
@@ -95,9 +95,9 @@ function showCamperRegistrationForm() {
     });
 
     // Llamar a la función para cargar y manejar el JSON
-    loadAndManageJSON();
+    loadJSON();
 }
 
 // Iniciar el programa
-showMenu();
-processOption();
+Menu();
+option_menu();
