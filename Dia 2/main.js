@@ -30,7 +30,7 @@ function processOption() {
             // Código para registrar un coordinador
             console.log("Registrando un nuevo coordinador...");
             break;
-        // Agrega más casos según tus necesidades
+        // Agrega más
         case "0":
             // Salir del programa
             console.log("Saliendo del programa...");
