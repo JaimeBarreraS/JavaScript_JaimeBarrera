@@ -42,9 +42,54 @@ function Crear(){
         event.preventDefault();
 
         const nuevoData = {
-            "nombre":document.getElementById("nombre").value, 
-            "edad":document.getElementById("edad").value, 
+        "informacion_personal": {
+            "nombre": document.getElementById("nombre").value,
+            "edad": document.getElementById("edad").value,
+            "direccion": {
+                "calle": document.getElementById("calle").value,
+                "numero": document.getElementById("numero").value,
+                "ciudad": document.getElementById("ciudad").value,
+            },
+            "contacto": {
+                "correo": document.getElementById("correo").value,
+                "telefono": document.getElementById("telefono").value,
+            }
+        },
+        "historial_educativo": [
+            {
+                "nivel": "Secundaria",
+                "institucion": document.getElementById("instituto1").value,
+                "anio_inicio": document.getElementById("anio_inicio1").value,
+                "anio_fin": document.getElementById("anio_fin1").value,
+            },
+            {
+                "nivel": "Universidad",
+                "institucion": document.getElementById("instituto2").value,
+                "titulo": document.getElementById("titulo").value,
+                "anio_inicio": document.getElementById("anio_inicio2").value,
+                "anio_fin": document.getElementById("anio_inicio2").value,
+            }
+        ],
+        "experiencia_laboral": [
+            {
+                "puesto": document.getElementById("puesto1").value,
+                "empresa": document.getElementById("empresa1").value,
+                "periodo": document.getElementById("periodo1").value,
+                "responsabilidades": [
+                    document.getElementById("responsabilidad1").value,
+                ]
+            },
+            {
+                "puesto": document.getElementById("puesto2").value,
+                "empresa": document.getElementById("empresa2").value,
+                "periodo": document.getElementById("periodo2").value,
+                "responsabilidades": [
+                    document.getElementById("responsabilidad2").value,
+                ]
+            }
+        ]
         }
+        
 
         fetch('data.json')
             .then(response => response.json())

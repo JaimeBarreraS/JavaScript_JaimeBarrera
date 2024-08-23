@@ -4,21 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD</title>
-    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        
+        h1, h2, h3 {
+            text-align: center;
+            color: #333;
+        }
+        
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            max-width: 600px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        input[type=text], input[type=number], input[type=email] {
+            width: 100%;
+            padding: 12px 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Crear</h1>
+    <!-- CREAR -->
+    <div id="crear-section">
+        <h1>Crear</h1>
+        <form id="data-form">
+            <!-- INFORMACION PERSONAL -->
+            <h2>Información Personal</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
 
-    <form id="data-form">
-        
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre">
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad">
 
-        <label for="edad">edad</label>
-        <input type="number" id="edad" name="edad">
+            <h3>Dirección</h3>
+            <label for="calle">Calle:</label>
+            <input type="text" id="calle" name="calle">
 
-        <button type="submit">Crear Registro</button>
-    </form>
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" name="numero">
+
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad">
+
+            <h3>Contacto</h3>
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo">
+
+            <label for="telefono">Teléfono:</label>
+            <input type="number" id="telefono" name="telefono">
+
+            <!-- HISTORIAL EDUCATIVO -->
+            <h2>Historial Educativo</h2>
+            <h3>Secundaria</h3>
+            <label for="nivel1">Nivel:</label>
+            <input type="text" id="nivel1" name="nivel1">
+
+            <label for="instituto1">Institución:</label>
+            <input type="text" id="instituto1" name="instituto1">
+
+            <label for="anio_inicio1">Año de Inicio:</label>
+            <input type="number" id="anio_inicio1" name="anio_inicio1">
+
+            <label for="anio_fin1">Año de Fin:</label>
+            <input type="number" id="anio_fin1" name="anio_fin1">
+
+            <h3>Universidad</h3>
+            <label for="nivel2">Nivel:</label>
+            <input type="text" id="nivel2" name="nivel2">
+
+            <label for="instituto2">Institución:</label>
+            <input type="text" id="instituto2" name="instituto2">
+
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo">
+
+            <label for="anio_inicio2">Año de Inicio:</label>
+            <input type="number" id="anio_inicio2" name="anio_inicio2">
+
+            <label for="anio_fin2">Año de Fin:</label>
+            <input type="number" id="anio_fin2" name="anio_fin2">
+
+            <!-- EXPERIENCIA LABORAL -->
+            <h2>Experiencia Laboral</h2>
+            <h3>Experiencia 1</h3>
+            <label for="puesto1">Puesto:</label>
+            <input type="text" id="puesto1" name="puesto1">
+
+            <label for="empresa1">Empresa:</label>
+            <input type="text" id="empresa1" name="empresa1">
+
+            <label for="periodo1">Periodo:</label>
+            <input type="text" id="periodo1" name="periodo1">
+
+            <label for="responsabilidad1">Responsabilidades:</label>
+            <input type="text" id="responsabilidad1" name="responsabilidad1">
+
+            <h3>Experiencia 2</h3>
+            <label for="puesto2">Puesto:</label>
+            <input type="text" id="puesto2" name="puesto2">
+
+            <label for="empresa2">Empresa:</label>
+            <input type="text" id="empresa2" name="empresa2">
+
+            <label for="periodo2">Periodo:</label>
+            <input type="text" id="periodo2" name="periodo2">
+
+            <label for="responsabilidad2">Responsabilidades:</label>
+            <input type="text" id="responsabilidad2" name="responsabilidad2">
+
+            <button type="submit">Crear Registro</button>
+        </form>
+    </div>
+
+    <!-- AÑADIR -->
+    <div id="añadir-section" class="hidden">
+        <h1>Añadir Información</h1>
+        <form id="add-form">
+            <label for="info">Información:</label>
+            <input type="text" id="info" name="info">
+            <button type="submit">Añadir</button>
+        </form>
+    </div>
 
     <script src="./main.js"></script>
 </body>
