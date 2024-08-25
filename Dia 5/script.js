@@ -27,6 +27,7 @@ function optio_menu() {
                         break;
                     case "3":
                         console.log("Actualizar");
+                        updateProduct();
                         break;
                     case "4":
                         console.log("Eliminar");
@@ -70,51 +71,88 @@ function optio_menu() {
 }
 
 function addProduct() {
+
     const dataForm = document.getElementById('data-form');
-    
-    if (dataForm) {
-        dataForm.addEventListener('submit', async (event) => {
-            event.preventDefault();
 
-            const nuevoData = {
-                "id": Date.now(),
-                "name": document.getElementById("name").value,
-                "category": document.getElementById("category").value,
-                "price": parseFloat(document.getElementById("price").value),
-                "quantityInStock": parseInt(document.getElementById("quantityInStock").value),
-                "supplierId": parseInt(document.getElementById("supplierId").value),
-            };
+    dataForm.addEventListener('submit', async (event) => {
+        event.preventDefault();
 
-            try {
-                const response = await fetch('data.json');
-                let dataJson = await response.json();
+        const nuevoData = {
+            "id": Date.now(),
+            "name": document.getElementById("name").value,
+            "category": document.getElementById("category").value,
+            "price": parseFloat(document.getElementById("price").value),
+            "quantityInStock": parseInt(document.getElementById("quantityInStock").value),
+            "supplierId": parseInt(document.getElementById("supplierId").value),
+        };
 
-                if (Array.isArray(dataJson) && dataJson.length > 0) {
-                    if (!dataJson[0].products) {
-                        dataJson[0].products = [];
-                    }
-                    dataJson[0].products.push(nuevoData);
-                    
-                    console.log('Datos del producto a agregar:', nuevoData);
-                    console.log('Datos actualizados:', dataJson);
+        const response = await fetch('data.json');
+        const dataJson = await response.json();
 
-                    const dataUpdatedJson = JSON.stringify(dataJson, null, 2);
-                    console.log('JSON actualizado:', dataUpdatedJson);
-                }
+        const products = dataJson[0].products || [];
+        products.push(nuevoData);
 
-                dataForm.reset();
-            } catch (error) {
-                console.error('Error al procesar el JSON:', error);
-            }
-        });
-    } else {
-        console.error('El formulario con ID "data-form" no se encontró.');
-    }
+        console.log('Datos del producto a agregar:', nuevoData);
+
+        dataForm.reset();
+    });
 }
 
-function viewProducts() {
 
+async function viewProducts() {
+
+    const response = await fetch('data.json');
+    const data = await response.json();
+
+    const products = data[0].products;
+
+    products.forEach(product => {
+        console.log(`ID: ${product.id}`);
+        console.log(`Nombre: ${product.name}`);
+        console.log(`Categoría: ${product.category}`);
+        console.log(`Precio: ${product.price}`);
+        console.log(`Cantidad en Stock: ${product.quantityInStock}`);
+        console.log(`ID del Proveedor: ${product.supplierId}`);
+        console.log('-------------------------');
+    });
 }
+
+async function updateProduct() {
+    const dataForm = document.getElementById('update-form');
+
+    dataForm.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        const productId = parseInt(document.getElementById('productId').value);
+        const newId = document.getElementById('newId').value ? parseInt(document.getElementById('newId').value) : undefined;
+
+        const newDetails = {
+            id: newId,
+            quantityInStock: newQuantityInStock
+        };
+
+        const response = await fetch('data.json');
+        const dataJson = await response.json();
+
+        const products = dataJson[0].products || [];
+        const productIndex = products.findIndex(product => product.id === productId);
+
+        const productToUpdate = products[productIndex];
+        const { id: newProductId = productToUpdate.id, quantityInStock: newProductQuantityInStock = productToUpdate.quantityInStock } = newDetails;
+
+        productToUpdate.id = newProductId;
+        productToUpdate.quantityInStock = newProductQuantityInStock;
+
+        console.log('Producto actualizado:', productToUpdate);
+
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    updateProduct();
+});
+
+
 
 Menu();
 optio_menu();
