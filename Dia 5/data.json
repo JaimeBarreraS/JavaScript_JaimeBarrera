@@ -8,7 +8,32 @@
                 "price": 999.99,
                 "quantityInStock": 50,
                 "supplierId": 101
+            },
+            {
+                "id": 2,
+                "name": "Xbox One Series S",
+                "category": "Electronics",
+                "price": 234.5,
+                "quantityInStock": 3,
+                "supplierId": 101
+            },
+            {
+                "id": 3,
+                "name": "Taladro Percutor",
+                "category": "Working tools",
+                "price": 234.768,
+                "quantityInStock": 10,
+                "supplierId": 101
+            },
+            {
+                "id": 4,
+                "name": "Dron Dji mini 2",
+                "category": "Electronics",
+                "price": 999.99,
+                "quantityInStock": 18,
+                "supplierId": 101
             }
+
         ],
         "suppliers": [
             {
@@ -19,6 +44,33 @@
                     "email": "sales@techsupplies.com",
                     "address": "123 Tech Lane, Silicon Valley, CA"
                 }
+            },
+            {
+                "id": 102,
+                "name": "Gadget World Ltd.",
+                "contactInfo": {
+                    "phone": "987-654-3210",
+                    "email": "info@gadgetworld.com",
+                    "address": "456 Gadget Road, Tech City, TX"
+                }
+            },
+            {
+                "id": 103,
+                "name": "ElectroMart Co.",
+                "contactInfo": {
+                    "phone": "555-123-4567",
+                    "email": "support@electromart.com",
+                    "address": "789 Electro Blvd, Innovation Park, NY"
+                }
+            },
+            {
+                "id": 104,
+                "name": "Digital Solutions LLC",
+                "contactInfo": {
+                    "phone": "321-654-9870",
+                    "email": "contact@digitalsolutions.com",
+                    "address": "101 Digital Drive, Future Town, WA"
+                }
             }
         ],
         "orders": [
@@ -28,6 +80,27 @@
                 "quantity": 5,
                 "orderDate": "2024-08-23",
                 "status": "Delivered"
+            },
+            {
+                "orderId": 1002,
+                "productId": 2,
+                "quantity": 3,
+                "orderDate": "2024-08-24",
+                "status": "Shipped"
+            },
+            {
+                "orderId": 1003,
+                "productId": 3,
+                "quantity": 10,
+                "orderDate": "2024-08-25",
+                "status": "Processing"
+            },
+            {
+                "orderId": 1004,
+                "productId": 4,
+                "quantity": 2,
+                "orderDate": "2024-08-26",
+                "status": "Pending"
             }
         ]
     }

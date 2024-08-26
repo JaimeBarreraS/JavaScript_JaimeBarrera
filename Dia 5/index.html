@@ -8,10 +8,8 @@
 </head>
 <body>
     <div id="crear-section">
-        <h1>Crear</h1>
+        <h1>Crear Producto</h1>
         <form id="data-form">
-            <h2>Crear Producto</h2>
-
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name">
 
@@ -31,18 +29,109 @@
             <button type="submit">Crear Registro</button>
         </form>
     </div>
+    <div id="view-section">
+        <h1>Ver Producto</h1>
+        <form id="product-form">
+            <button type="submit">Ver productos</button>
+        </form>
+    </div>
+    <div id="products-list" style="display: none;">
+        <h1>Lista de Productos</h1>
+        <div id="products-container"></div>
+    </div>
     <div id="update-section">
         <h1>Actualizar Producto</h1>
         <form id="update-form">
+
             <label for="productId">ID del Producto:</label>
             <input type="number" id="productId" name="productId" required>
 
             <label for="newId">Nuevo ID (opcional):</label>
             <input type="number" id="newId" name="newId">
 
+            <label for="newQuantityInStock">Nueva Cantidad en Stock:</label>
+        <input type="number" id="newQuantityInStock" name="newQuantityInStock">
+
             <button type="submit">Actualizar Producto</button>
         </form>
     </div>
+    <div id="delete-section">
+        <h1>Eliminar Producto</h1>
+        <form id="delete-form">
+            <label for="deleteProductId">ID del Producto a Eliminar:</label>
+            <input type="number" id="deleteProductId" name="deleteProductId" required>
+    
+            <button type="submit">Eliminar Producto</button>
+        </form>
+    </div>
+
+    <div id="supplier-section">
+        <h1>Gestionar Proveedores</h1>
+        
+        <div id="create-supplier">
+            <h2>Crear Proveedor</h2>
+            <form id="create-supplier-form">
+                <label for="supplierName">Nombre del Proveedor:</label>
+                <input type="text" id="supplierName" name="supplierName">
+
+                <label for="supplierPhone">Teléfono:</label>
+                <input type="text" id="supplierPhone" name="supplierPhone">
+
+                <label for="supplierEmail">Email:</label>
+                <input type="email" id="supplierEmail" name="supplierEmail">
+
+                <label for="supplierAddress">Dirección:</label>
+                <input type="text" id="supplierAddress" name="supplierAddress">
+
+                <button type="submit">Crear Proveedor</button>
+            </form>
+        </div>
+        
+        <div id="view-supplier">
+            <h2>Ver Proveedores</h2>
+            <form id="view-supplier-form">
+                <button type="submit">Ver proveedores</button>
+            </form>
+        </div>
+        <div id="suppliers-list" style="display: none;">
+            <h1>Lista de Proveedores</h1>
+            <div id="suppliers-container"></div>
+        </div>
+        
+
+        <div id="update-supplier">
+            <h2>Actualizar Proveedor</h2>
+            <form id="update-supplier-form">
+                <label for="supplierIdUpdate">ID del Proveedor:</label>
+                <input type="number" id="supplierIdUpdate" name="supplierIdUpdate" required>
+
+                <label for="newSupplierName">Nuevo Nombre:</label>
+                <input type="text" id="newSupplierName" name="newSupplierName">
+
+                <label for="newSupplierPhone">Nuevo Teléfono:</label>
+                <input type="text" id="newSupplierPhone" name="newSupplierPhone">
+
+                <label for="newSupplierEmail">Nuevo Email:</label>
+                <input type="email" id="newSupplierEmail" name="newSupplierEmail">
+
+                <label for="newSupplierAddress">Nueva Dirección:</label>
+                <input type="text" id="newSupplierAddress" name="newSupplierAddress">
+
+                <button type="submit">Actualizar Proveedor</button>
+            </form>
+        </div>
+
+        <div id="delete-supplier">
+            <h2>Eliminar Proveedor</h2>
+            <form id="delete-supplier-form">
+                <label for="deleteSupplierId">ID del Proveedor a Eliminar:</label>
+                <input type="number" id="deleteSupplierId" name="deleteSupplierId" required>
+    
+                <button type="submit">Eliminar Proveedor</button>
+            </form>
+        </div>
+    </div>
+    
     <script src="./script.js"></script>
 </body>
 </html>
