@@ -7,7 +7,43 @@ table thead {
     background-color: #302b63;
     color: white;
 }
-.label {
+.label1,.label2,.label3,.label4,.label5,.label6,
+.label7,.label8,.label9,.label10,.label11,.label12{
     font-weight: bold;
-    margin-right: 50px
+}
+.label1{
+    margin-right: 17vw
+}
+.label2{
+    margin-right: 5vw
+}
+.label3{
+    margin-right: 7vw
+}
+.label4{
+    margin-right: 12.7vw
+}
+.label5{
+    margin-right: 14.5vw
+}
+.label6{
+    margin-right: 15vw
+}
+.label7{
+    margin-right: 15vw
+}
+.label8{
+    margin-right: 6vw
+}
+.label9{
+    margin-right: 10vw
+}
+.label10{
+    margin-right: 14vw
+}
+.label11{
+    margin-right: 15vw
+}
+.label12{
+    margin-right: 19vw
 }
