@@ -1,0 +1,13 @@
+body {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+table thead {
+    background-color: #302b63;
+    color: white;
+}
+.label {
+    font-weight: bold;
+    margin-right: 50px
+}
