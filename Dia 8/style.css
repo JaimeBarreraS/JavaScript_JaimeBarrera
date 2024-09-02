@@ -1,0 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap&#39');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Oxanium', cursive;
+}
+.pokedex{
+    position: absolute;
+    left: 33vw;
+    top: 8vw;
+    width: 34.5vw;
+    height: 52vw;
+}
+.contenedor{
+    width: 100vw;
+    height: 70vw;
+    background: linear-gradient(#6eb9f5,#ffffff);
+}
+#poke{
+    -webkit-box-shadow: -6px 5px 0px 0px rgb(93, 93, 93);
+    -moz-box-shadow: -6px 5px 0px 0px rgba(93, 93, 93);
+    box-shadow: -6px 5px 0px 0px rgba(93, 93, 93);
+    border-radius: 0.5vw;
+    position: absolute;
+    left: 37vw;
+    top: 43vw;
+    width: 24vw;
+    height: 3.5vw;
+}
+.pre{
+    position: absolute;
+    left: 37vw;
+    top: 52vw;
+    width: 11vw;
+    height: 3.3vw;
+    background-color:  rgb(65, 65, 65);
+    color: white;
+    -webkit-box-shadow: -6px 5px 0px 0px rgb(25, 25, 25);
+    -moz-box-shadow: -6px 5px 0px 0px rgba(25, 25, 25);
+    box-shadow: -6px 5px 0px 0px rgba(25, 25, 25);
+    border-radius: 0.5vw;
+}
+.nex{
+    position: absolute;
+    left: 50vw;
+    top: 52vw;
+    width: 11vw;
+    height: 3.3vw;
+    background-color:  rgb(65, 65, 65);
+    color: white;
+    -webkit-box-shadow: -6px 5px 0px 0px rgb(25, 25, 25);
+    -moz-box-shadow: -6px 5px 0px 0px rgba(25, 25, 25);
+    box-shadow: -6px 5px 0px 0px rgba(25, 25, 25);
+    border-radius: 0.5vw;
+}
+
+#data{
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    top: 24vw;
+    left: 44vw;
+}
