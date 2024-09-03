@@ -19,7 +19,7 @@ font-family: 'Oxanium', cursive;
     height: 70vw;
     background: linear-gradient(#6eb9f5,#ffffff);
 }
-#poke{
+#Find{
     -webkit-box-shadow: -6px 5px 0px 0px rgb(93, 93, 93);
     -moz-box-shadow: -6px 5px 0px 0px rgba(93, 93, 93);
     box-shadow: -6px 5px 0px 0px rgba(93, 93, 93);
@@ -57,10 +57,35 @@ font-family: 'Oxanium', cursive;
     border-radius: 0.5vw;
 }
 
+.p,.n{
+    font-size: 2vw;
+}
+
 #data{
     position: absolute;
     width: 10vw;
     height: 10vw;
     top: 24vw;
     left: 44vw;
+}
+.poke {
+    width: 76%; 
+    height: auto;
+    margin-left: 1vw;
+}
+#numero{
+    position: absolute;
+    top: 12.5vw;
+    right: 6.5vw;
+    font-size: 2vw;
+    font-weight: bold;
+    color: rgb(129, 129, 129);
+}
+#name{
+    position: absolute;
+    top: 12.5vw;
+    right: -5vw;
+    font-size: 2vw;
+    font-weight: bold;
+    color: rgb(33, 33, 33);
 }
