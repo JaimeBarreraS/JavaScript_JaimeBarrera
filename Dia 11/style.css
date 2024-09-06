@@ -1,128 +1,161 @@
-body{
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(./Ubuntu/Ubuntu-Regular.ttf);
+}
+* {
     margin: 0;
 }
-#black{
+
+body, html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+#black, #white {
     width: 100%;
-    height: 50%;
-    position: absolute;
+    height: 50vh;
+}
+
+#black {
     background-color: #26282a;
 }
-#white{
-    margin-top: 23.9vw;
-    height: 50%;
-    width: 100%;
-    position: absolute;
+
+#white {
     background-color: #f0f0f0;
 }
+
 #medium{
-    margin-top: 7vw;
-    margin-left: 20vw;
-    height: 70%;
-    width: 60%;
+    top: 12vw;
+    left: 10vw;
+    height: 65vh;
+    width: 80vw;
     position: absolute;
     background-color: #f6f6f7;
-    z-index: 1;
+    box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.75);
+}
+#gray_box{
+    position: absolute;
+    background-color: #f0f0f0;
+    top: 4vw;
+    left: 10vw;
+    width: 80vw;
+    height: 16.6vh;
+    box-shadow: 0px 1px 0px 0px rgb(163, 163, 163);
 }
 
 #photo{
     position: absolute;
-    margin-top: 1.03vw;
-    margin-left: 25.7vw;
+    top: -6.5vw;
+    left: 35vw;
     width: 8.9vw;
     height: 8.9vw;
     border-radius: 30vw;
     border: 0.10vw solid rgb(163, 163, 163);
-    z-index: 5;
+    z-index: 1;
 }
 #imgs{
-    margin-top: 1.4vw;
-    margin-left: 26.05vw;
+    margin-top: -6.16vw;
+    margin-left: 35.35vw;
     border-radius: 30vw;
-    z-index: 5;
+    z-index: 10;
     width: 8.3vw;
     height: 8.3vw;
-    box-shadow: -1px 1px 0px 5px rgba(255,255,255,1);
+    z-index: 5;
+    box-shadow: -1px 1px 0px 10px rgba(255,255,255,1);
 }
-#linea2{
-    margin-top: -2vw;
-}
+
 .imagenes{
     position: absolute;
     margin-top: 13vw;
-    width: 59.9vw;
-    height: 6vw;
+    width: 80vw;
+    height: 7vw;
     overflow: hidden;
 }
-#i1{
+#name{
     position: absolute;
-    top: -7vw;
-    left: 10vw;
+    top: -6.7vw;
+    left: 13vw;
     width: 6vw;
     height: 12vw;
     transition: 0.5s;
 }
 
-#i1:hover{
+#name:hover{
     top: 0vw;
     transition: 0.5s;
 }
-#i2{
+#email{
     position: absolute;
     top: -7.6vw;
-    left: 17vw;
+    left: 22vw;
     width: 6vw;
     height: 12vw;
     transition: 0.5s;
 }
-#i2:hover{
+#email:hover{
     top: -0.3vw;
     transition: 0.5s;
 }
-#i3{
+#birthday{
     position: absolute;
-    top: -7.5vw;
-    left: 24vw;
-    width: 6vw;
-    height: 12vw;
-    transition: 0.5s;
-}
-#i3:hover{
-    top: -0.2vw;
-    transition: 0.5s;
-}
-#i4{
-    position: absolute;
-    top: -7.2vw;
+    top: -7.3vw;
     left: 31vw;
     width: 6vw;
     height: 12vw;
     transition: 0.5s;
 }
-#i4:hover{
+#birthday:hover{
     top: -0.2vw;
     transition: 0.5s;
 }
-#i5{
+#address{
     position: absolute;
     top: -7.2vw;
-    left: 38vw;
+    left: 41vw;
     width: 6vw;
     height: 12vw;
     transition: 0.5s;
 }
-#i5:hover{
+#address:hover{
     top: -0.2vw;
     transition: 0.5s;
 }
-#i6{
+#phone{
     position: absolute;
-    top: -7.5vw;
-    left: 44vw;
+    top: -7vw;
+    left: 52vw;
     width: 6vw;
     height: 12vw;
     transition: 0.5s;
 }
-#i6:hover{
+#phone:hover{
     top: -0.2vw;
     transition: 0.5s;
+}
+#password{
+    position: absolute;
+    top: -7.2vw;
+    left: 61vw;
+    width: 6vw;
+    height: 12vw;
+    transition: 0.5s;
+}
+
+#info{
+    text-align: center;
+    margin-top: 3.5vw;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 1.7vw;
+    color: #8e8e8e; 
+}
+#info2{
+    text-align: center;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    font-size: 3vw;
+    color: #000000; 
 }
