@@ -1,0 +1,163 @@
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+}
+.container{
+    position: absolute;
+    width: 100vw;
+    height: 305vw;
+    overflow: hidden;
+}
+
+/* =============== BARRA AZUL ==============*/
+.menu_bar{
+    position:fixed;
+    width: 100%;
+    height: 5vw;
+    z-index: 1;
+}
+.pokemon{
+    top: 1.2vw;
+    left: 3vw;
+    position: absolute;
+    width: 4.5vw;
+    height: 4.5vw;
+    border-radius: 100vw;
+    box-shadow: -1px 1px 27px 9px rgb(249,212,44);
+}
+.pokemon:hover{
+    box-shadow: -1px 1px 27px 9px rgb(236, 10, 10);
+}
+
+.starwars{
+    top: 1.2vw;
+    left: 10vw;
+    position: absolute;
+    width: 4.5vw;
+    height: 4.5vw;
+    border-radius: 100vw;
+    box-shadow: -1px 1px 27px 9px #90c535;
+}
+.starwars:hover{
+    box-shadow: -1px 1px 27px 9px rgb(236, 10, 10);
+}
+
+/* ==========================================*/
+/* ================ PAGINA UNO ==============*/
+/* ==========================================*/
+.invisible{
+    position: absolute;
+    left: 50vw;
+    width: 1vw;
+    height: 1vw;
+}
+.fondo{
+    position: absolute;
+    top: -3vw;
+    width: 100%;
+    height: auto;
+}
+
+.pokemon_logo{
+    position: absolute;
+    width: 20vw;
+    height: auto;
+    top: 3vw;
+    left: 38vw;
+}
+
+.pokebola{
+    position: absolute;
+    width: 8vw;
+    height: auto;
+    top: 16vw;
+    left: 44vw;
+    opacity: 0.6;
+}
+.pokebola:hover{
+    opacity: 1;
+}
+
+/* ==========================================*/
+/* ================ PAGINA DOS ==============*/
+/* ==========================================*/
+.invisible2{
+    position:absolute;
+    top: 57.5vw;
+    left: 34vw;
+    width: 10vw;
+    height: 3vw;
+}
+.starwars-fondo{
+    position: absolute;
+    top: 53vw;
+    width: 100%;
+    height: auto;
+}
+.starwars-logo{
+    position: absolute;
+    top: 70vw;
+    width: 35vw;
+    right: 15vw;
+    height: auto;
+}
+.boton-starwars{
+    position: absolute;
+    top: 87vw;
+    width: 15vw;
+    right: 23vw;
+    height: auto;
+    opacity: 0.6;
+}
+.boton-starwars:hover{
+    opacity: 1;
+}
+
+/* ==========================================*/
+/* ================ PAGINA TRES =============*/
+/* ==========================================*/
+.invisible3{
+    position:absolute;
+    top: 104.5vw;
+    left: 34vw;
+    width: 10vw;
+    height: 3vw;
+}
+
+/* ==========================================*/
+/* ================ PAGINA CUATRO =============*/
+/* ==========================================*/
+.invisible4{
+    position:absolute;
+    top: 153.5vw;
+    left: 34vw;
+    width: 10vw;
+    height: 3vw;
+}
+
+/* ==========================================*/
+/* ================ PAGINA CINCO =============*/
+/* ==========================================*/
+.invisible5{
+    position:absolute;
+    top: 204vw;
+    left: 34vw;
+    width: 10vw;
+    height: 3vw;
+}
+
+/* ==========================================*/
+/* ================ PAGINA SEIS =============*/
+/* ==========================================*/
+.invisible6{
+    position:absolute;
+    top: 250.5vw;
+    left: 34vw;
+    width: 10vw;
+    height: 3vw;
+}
