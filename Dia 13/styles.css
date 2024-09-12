@@ -13,15 +13,15 @@ body {
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 2%, rgba(32,117,3,1) 91%);
     display: flex;
-    justify-content: flex-start; /* Alinear al borde izquierdo */
-    align-items: flex-start; /* Alinear al borde superior */
+    justify-content: flex-start; 
+    align-items: flex-start; 
     width: 100vw;
     height: 300vh;
     overflow-x: hidden;
 }
 
 .game-container {
-    margin: 12px; /* Espacio alrededor del contenedor */
+    margin: 12px; 
     width: 100%;
 }
 
@@ -50,7 +50,7 @@ body {
 .stock {
     width: 120px;
     height: 165px;
-    background-image: url('img/card_back.png');
+    background-image: url(https://deckofcardsapi.com/static/img/back.png);
     background-size: cover;
     border-radius: 10px;
     border: 2px solid #fff; 
@@ -63,8 +63,8 @@ body {
     width: 120px;
     height: 165px;
     border-radius: 10px;
-    border: 2px solid #fff; /* Borde para resaltar el área del waste */
-    background-color: rgba(0, 0, 0, 0.1); /* Color de fondo sutil */
+    border: 2px solid #fff; 
+    background-color: rgba(0, 0, 0, 0.1); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,6 +112,6 @@ body {
 }
 
 .card {
-    border: 1px solid #333; /* Borde para cartas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    border: 1px solid #333; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
