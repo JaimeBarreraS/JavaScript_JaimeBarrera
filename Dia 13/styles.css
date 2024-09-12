@@ -1,117 +1,47 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: Arial, sans-serif;
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 2%, rgba(32,117,3,1) 91%);
-    display: flex;
-    justify-content: flex-start; 
-    align-items: flex-start; 
-    width: 100vw;
-    height: 300vh;
-    overflow-x: hidden;
-}
-
-.game-container {
-    margin: 12px; 
-    width: 100%;
-}
-
-.header {
-    background-color: brown;
-    padding: 10px;
-    color: white;
-    font-size: 20px;
-    margin-left: -1.2vw;
-    margin-top: -1vw;
-    text-align: center;
-}
-
-.top-row {
-    display: flex;
-    margin: 20px 0;
-    gap: 20.5vw;
-}
-
-.stock,
-.waste,
-.foundations {
-    display: flex;
-}
-
-.stock {
-    width: 120px;
-    height: 165px;
-    background-image: url(https://deckofcardsapi.com/static/img/back.png);
-    background-size: cover;
-    border-radius: 10px;
-    border: 2px solid #fff; 
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 2%, rgba(3,7,117,1) 91%);
-    box-shadow: inset -1px -1px 5px 8px rgba(255,255,255,1);
-}
-
-.waste {
-    width: 120px;
-    height: 165px;
-    border-radius: 10px;
-    border: 2px solid #fff; 
-    background-color: rgba(0, 0, 0, 0.1); 
+    background-color:black;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.foundations {
-    gap: 3vw;
-}
-
-.foundation {
-    width: 120px;
-    height: 165px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
+.game-container {
     text-align: center;
-    line-height: 140px;
-    font-size: 24px;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.2);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
-.tableau {
-    display: flex;
-    gap: 2.1vw;
-
+h1 {
+    margin-bottom: 20px;
 }
 
-.pile {
+.card-img {
     width: 150px;
-    height: 140px;
-    text-align: center;
-    position: relative;
+    height: auto;
+    margin-top: 10px;
 }
 
-.pile .card {
-    width: 120px;
-    height: 140px;
-    border-radius: 10px;
-    background-size: cover;
-    transition: transform 0.3s ease;
+.buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #333;
 }
 
-.pile .card.dragging {
-    transform: scale(1.1);
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.card {
-    border: 1px solid #333; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+#new-game {
+    margin-top: 20px;
+    display: none;
 }

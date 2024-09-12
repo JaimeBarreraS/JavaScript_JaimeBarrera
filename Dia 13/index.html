@@ -1,49 +1,37 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solitario</title>
+    <title>Adivina la Carta</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="game-container">
-        <div class="header">
-            <h1>SOLITARIO</h1>
+        <h1>Adivina la Carta</h1>
+        <div id="game-info">
+            <p>Carta de referencia:</p>
+            <img id="reference-card" class="card-img" src="" alt="Carta de referencia">
+            <p>¿Es la próxima carta mayor, menor o igual?</p>
         </div>
 
-        <div class="top-row">
-            <div class="stock"></div>
-            <div class="waste">
-            </div>
-            <div class="foundations">
-                <div class="foundation">A</div>
-                <div class="foundation">A</div>
-                <div class="foundation">A</div>
-                <div class="foundation">A</div>
-            </div>
+        <div id="drawn-card-container">
+            <img id="drawn-card" class="card-img" src="" alt="">
         </div>
 
-        <div class="tableau">
-            <div class="pile"></div>
-            <div class="pile"></div>
-            <div class="pile"></div>
-            <div class="pile"></div>
-            <div class="pile"></div>
-            <div class="pile"></div>
-            <div class="pile"></div>
-            <div class="pile"></div>
-            <div class="pile"></div>
-            <div class="pile"></div>
-            <div class="pile"></div>
-            <div class="pile"></div>
-            <div class="pile"></div>
-            <div class="pile"></div>
+        <div class="buttons">
+            <button id="higher">Mayor</button>
+            <button id="equal">Igual</button>
+            <button id="lower">Menor</button>
         </div>
+
+        <div id="result"></div>
+        <button id="new-game">Nueva Carta</button>
     </div>
-    <script src="app.js"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
