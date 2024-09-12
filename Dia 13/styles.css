@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 2%, rgba(32,117,3,1) 91%);
+    display: flex;
+    justify-content: flex-start; /* Alinear al borde izquierdo */
+    align-items: flex-start; /* Alinear al borde superior */
+    width: 100vw;
+    height: 300vh;
+    overflow-x: hidden;
+}
+
+.game-container {
+    margin: 12px; /* Espacio alrededor del contenedor */
+    width: 100%;
+}
+
+.header {
+    background-color: brown;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    margin-left: -1.2vw;
+    margin-top: -1vw;
+    text-align: center;
+}
+
+.top-row {
+    display: flex;
+    margin: 20px 0;
+    gap: 20.5vw;
+}
+
+.stock,
+.waste,
+.foundations {
+    display: flex;
+}
+
+.stock {
+    width: 120px;
+    height: 165px;
+    background-image: url('img/card_back.png');
+    background-size: cover;
+    border-radius: 10px;
+    border: 2px solid #fff; 
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 2%, rgba(3,7,117,1) 91%);
+    box-shadow: inset -1px -1px 5px 8px rgba(255,255,255,1);
+}
+
+.waste {
+    width: 120px;
+    height: 165px;
+    border-radius: 10px;
+    border: 2px solid #fff; /* Borde para resaltar el área del waste */
+    background-color: rgba(0, 0, 0, 0.1); /* Color de fondo sutil */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foundations {
+    gap: 3vw;
+}
+
+.foundation {
+    width: 120px;
+    height: 165px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 140px;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.tableau {
+    display: flex;
+    gap: 2.1vw;
+
+}
+
+.pile {
+    width: 150px;
+    height: 140px;
+    text-align: center;
+    position: relative;
+}
+
+.pile .card {
+    width: 120px;
+    height: 140px;
+    border-radius: 10px;
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+
+.pile .card.dragging {
+    transform: scale(1.1);
+}
+
+.card {
+    border: 1px solid #333; /* Borde para cartas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+}
