@@ -25,7 +25,7 @@ function startGame() {
             drawnCardCode = data.cards[1].code;
 
             referenceCardImg.src = `https://deckofcardsapi.com/static/img/${referenceCardCode}.png`;
-            drawnCardImg.src = ''; // Imagen oculta
+            drawnCardImg.src = '';
 
             newGameButton.style.display = 'none';
         });

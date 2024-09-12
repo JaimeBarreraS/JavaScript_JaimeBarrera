@@ -1,7 +1,8 @@
 body {
     font-family: Arial, sans-serif;
-    background-color:black;
+    background-image: url(./9365a3ba5b8a58cdf77782c5c697beef.jpg);
     display: flex;
+    background-size: cover;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -10,10 +11,10 @@ body {
 
 .game-container {
     text-align: center;
-    background-color: white;
+    background-color: rgb(228, 228, 228);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 2px 16px 8px rgba(0,0,0,0.75);
 }
 
 h1 {
@@ -32,7 +33,6 @@ h1 {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    border: 1px solid #333;
 }
 
 #result {
@@ -42,6 +42,37 @@ h1 {
 }
 
 #new-game {
-    margin-top: 20px;
+    margin-top: 5px;
+    padding: 8px 20px;
     display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+#higher{
+    box-shadow:0px 1px 6px 2px rgb(0, 0, 0);
+}
+#equal{
+    box-shadow: 0px 1px 6px 2px rgb(0, 0, 0);
+}
+#lower{
+    box-shadow:0px 1px 6px 2px rgb(0, 0, 0);
+}
+
+#higher:hover{
+    box-shadow: inset 0px 1px 6px 2px rgb(0, 133, 22);
+}
+#lower:hover{
+    box-shadow: inset 0px 1px 6px 2px rgb(133, 0, 0);
+}
+#equal:hover{
+    box-shadow: inset 0px 1px 6px 2px rgb(1, 32, 173);
+
+}
+#new-game{
+    box-shadow: 0px 1px 6px 2px rgb(0, 0, 0);
+}
+#new-game:hover{
+    background-color: rgb(184, 150, 0);
 }
