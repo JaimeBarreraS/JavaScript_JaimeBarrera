@@ -1,0 +1,66 @@
+@font-face{
+    font-family: letra;
+    src: url(./font/Montserrat-VariableFont_wght.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+
+}
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: #3446cd;
+    color: white;
+    text-align: center;
+    padding: 2vw;
+    font-family: letra;
+    font-size: 1.5vw;
+    align-items: center;
+    gap: 0.8vw;
+}
+h5{
+    font-weight: 300;
+    font-family: letra;
+    font-size: 1vw;
+    color: rgb(228, 228, 228);
+}
+#buscar{
+    border-radius: 2vw;
+    padding: 0.8vw;
+    width: 85vw;
+}
+#resultado{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4vw;
+    padding: 1.4vw;
+    border: 1px solid blue;
+}
+#info{
+    display: flex;
+    flex-direction: 1 column;
+    gap: 2vw;
+    padding: 1vw;
+    border: 1px solid blue;
+}
+#photo{
+    border-radius: 10vw;
+}
+#info2{
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    
+}
+#name{
+    font-size: 2.2vw;
+    font-weight: bold;
+    font-family: letra;
+}
+#des{
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-family: letra;
+}
